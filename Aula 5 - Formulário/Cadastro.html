@@ -1,0 +1,132 @@
+<html>
+
+<head> 
+    <html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title> Cadastro </title>
+  <style>
+    /* Seletor universal: aplica estilos a todos os elementos */
+    * {
+      box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura e altura total */
+      margin: 0; /* Remove a margem padrão de todos os elementos */
+      padding: 0; /* Remove o preenchimento (padding) padrão de todos os elementos */
+    }
+
+    /* Estilos para os elementos raiz HTML e body */
+    html, body {
+      width: 100%; /* Faz com que HTML e body ocupem a largura total da janela de visualização */
+      height: 100%; /* Faz com que HTML e body ocupem a altura total da janela de visualização */
+      font-family: Arial, sans-serif; /* Define a fonte padrão como Arial */
+      background-color: #f0f2f5; /* Define uma cor de fundo cinza claro para toda a página */
+    }
+
+    /* Estilos para uma classe de contêiner chamada 'form-fundo' */
+    .form-fundo {
+      width: 100%; /* Faz com que este contêiner ocupe a largura total de seu pai */
+      height: 100%; /* Faz com que este contêiner ocupe a altura total de seu pai */
+      display: flex; /* Habilita o Flexbox para layout */
+      justify-content: center; /* Centraliza os itens flex horizontalmente dentro do contêiner */
+      align-items: center; /* Centraliza os itens flex verticalmente dentro do contêiner */
+    }
+
+    /* Estilos para uma classe chamada 'form-login' */
+    .form-login, .form-cadastro {
+      background-color: #fff; /* Define uma cor de fundo branca para o formulário de login */
+      padding: 20px; /* Adiciona 20px de preenchimento (padding) dentro do formulário */
+      border-radius: 10px; /* Arredonda os cantos do formulário com um raio de 10px */
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil com 15px de desfoque, preto 10% opaco */
+      width: 100%; /* Faz com que o formulário ocupe 100% da largura de seu pai */
+      max-width: 400px; /* Limita a largura máxima do formulário a 400px */
+    }
+
+    /* Estilos para o cabeçalho de nível 2 (h2) */
+    h2 {
+      text-align: center; /* Centraliza o texto dentro dos elementos h2 */
+      margin-bottom: 25px; /* Adiciona uma margem inferior de 25px abaixo dos elementos h2 */
+    }
+
+    /* Estilos para elementos de label */
+    label {
+      font-weight: bold; /* Torna o texto das labels em negrito */
+      display: block; /* Faz com que as labels sejam elementos de bloco, ocupando largura total e empilhando verticalmente */
+      margin-top: 10px; /* Adiciona uma margem superior de 10px acima das labels */
+    }
+
+    /* Estilos para elementos de input com tipo 'email' ou 'password' */
+    input {
+      width: 100%; /* Faz com que os campos de input ocupem 100% da largura de seu pai */
+      padding: 12px; /* Adiciona 12px de preenchimento (padding) dentro dos campos de input */
+      margin-bottom: 10px; /* Adiciona uma margem inferior de 10px abaixo dos campos de input */
+      border: 1px solid #ccc; /* Define uma borda sólida de 1px cinza claro */
+      border-radius: 6px; /* Arredonda os cantos dos campos de input com um raio de 6px */
+      font-size: 14px; /* Define o tamanho da fonte para o texto dentro dos campos de input */
+    }
+
+    /* Estilos para as classes '.btn_1' e '.btn_2' */
+    .btn_1, .btn_2 {
+      width: 100%; /* Faz com que os botões ocupem 100% da largura de seu pai */
+      padding: 12px; /* Adiciona 12px de preenchimento (padding) dentro dos botões */
+      color: #fff; /* Define a cor do texto dos botões como branco */
+      border: none; /* Remove a borda padrão dos botões */
+      border-radius: 6px; /* Arredonda os cantos dos botões com um raio de 6px */
+      font-size: 16px; /* Define o tamanho da fonte para o texto do botão */
+      cursor: pointer; /* Altera o cursor do mouse para um ponteiro ao passar sobre os botões */
+      transition: background-color 0.3s ease; /* Adiciona um efeito de transição para mudanças na cor de fundo em 0.3 segundos */
+      margin-top: 10px; /* Adiciona uma margem superior de 10px acima dos botões */
+    }
+
+    /* Estilos específicos para o botão com a classe 'btn_1' */
+    .btn_1 {
+      background-color: #4CAF50; /* Define a cor de fundo de 'btn_1' para um tom de verde */
+    }
+
+    /* Estilos de hover para o botão com a classe 'btn_1' */
+    .btn_1:hover {
+      background-color: #45A049; /* Escurece a cor de fundo de 'btn_1' ao passar o mouse sobre ele */
+    }
+
+    /* Estilos específicos para o botão com a classe 'btn_2' */
+    .btn_2 {
+      background-color: #1283f5; /* Define a cor de fundo de 'btn_2' para um tom de azul */
+    }
+
+    /* Estilos de hover para o botão com a classe 'btn_2' */
+    .btn_2:hover {
+      background-color: #006ad3; /* Escurece a cor de fundo de 'btn_2' ao passar o mouse sobre ele */
+    }
+  </style>
+</head>
+
+<body>
+<h1> Cadastro </h1>
+
+<div class="form-fundo">
+    <div class="form-cadastro">
+        <form id="cadastroForm">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="email" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="Telefone" name="telefone" placeholder="(11) 91234-3333" required />
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="00000000000" required />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <label for="confirmaSenha">Confirmar senha</label>
+            <input type="password" id="confirmaSenha" name="confirmaSenha" required />
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>
