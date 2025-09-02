@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seções e Âncoras ಇ</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: sans-serif;
+            background: #e6dfeb;
+            color: rgb(255, 255, 255);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 1rem;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(153, 126, 161, 0.667);
+            border-bottom: 1px solid #d0abdf;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.7rem 0;
+        }
+
+        nav.logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav.menu a {
+            color: rgba(235, 211, 247, 0.667);
+            text-decoration: none;
+            padding: 0.4rem 0.7rem;
+            border-radius: 20px;
+            margin-left: 0.5rem;
+        }
+
+        nav .menu a:hover {
+           background: hsl(302, 14%, 63%);
+        }
+
+        section  {
+            padding: 3rem 0;
+            scroll-margin-top: 4rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .card {
+            background: #b194b9;
+            border: 1px solid #79458e;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+
+        .bnt {
+            border: 1px solid #21002e;
+            background: #482f4e;
+            color: #ffffff;
+            padding: 0.5rem 0.8rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .bnt:hover {
+            background: #1a0024;
+        }
+
+        .primary {
+            background:rgb(68, 1, 77) ;
+            color: rgb(254, 255, 255);
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+
+        footer {
+            padding: 2rem 0;
+            text-align: center;
+            color: #8c64a1;
+            border-top: 1px solid #4d235d;
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            padding: 0.6rem 0.9rem;
+            border-radius: 999px;
+            background: #220b2c;
+            border: 1px solid #5d235a;
+            color: #eee;
+            text-decoration: none;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="top"></div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Minha Loja ಇ</div>
+                <div class="menu">
+                    <a href="#produtos">Produtos</a>
+                    <a href="#promoções">Promoções</a>
+                    <a href="#notícias">Notícias</a>
+                    <a href="#mapa">Mapa</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Fone Blutetooth</h3>
+                    <p>Cancelamento de ruído e até 30h de bateria.</p>
+                    <div class="price">R$299,90</div>
+                    <button class="bnt primary">Comprar</button>
+                </div>
+                <div class="card">
+                    <h3>Teclado Mecânico</h3>
+                    <p>Switch silencioso e iluminação ajustável.</p>
+                    <div class="price">R$449,90</div>
+                    <button class="bnt primary">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="promoções">
+            <h2>Promoções</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Smartwatch Fit</h3>
+                    <p>Notificações e resistência à água.</p>
+                    <div class="price">R$429,90</div>
+                    <button class="bnt primary">Comprar</button>
+                </div>
+                <div class="card">
+                    <h3>Mouse sem fio</h3>
+                    <p>Recarregável e ergonômico.</p>
+                    <div class="price">R$99,90</div>
+                    <button class="bnt primary">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="notícias">
+            <h2>Notícias</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Nova coleção sustentável</h3>
+                    <p>Lançamos linha com materiais reciclados.</p>
+                    <button class="bnt">Ler mais</button>
+                </div>
+                <div class="card">
+                    <h3>Programa de fidelidade</h3>
+                    <p>Ganhe pontos e troque por descontos.</p>
+                    <button class="bnt">Ler mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="mapa" class="map">
+            <h2>Mapa</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11413.294021868036!2d11.707618365470166!3d44.34440508279826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132b4a7474d71167%3A0x81177e3551c217a6!2sAut%C3%B3dromo%20Enzo%20e%20Dino%20Ferrari!5e0!3m2!1spt-BR!2sbr!4v1756761163118!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </main>
+
+    <footer>Minha loja ಇ</footer>
+
+    <a href="#top" class="back-to-top">⇡ Topo</a>
+    
+
+
+</body>
+</html>
